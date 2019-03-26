@@ -1,0 +1,253 @@
+//头部开始
+header[role="banner"]{
+    >.container-fluid{
+        position:relative;
+    }
+    .nav_top{
+        width: 100%;
+        background: #333333;
+        height: 30px;
+        >div{
+             height: 30px;
+        }
+        
+    }
+}
+@media (max-width: (@grid-float-breakpoint - 1)){
+     .utilitiy-nav{
+        .sr-only();
+    }
+}
+.nav_size li a{
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+#navul li.active{
+    background: #f05549;
+    color: #FFFFFF;
+}
+#navul>li>a{
+    color: #898989;
+}
+#navul>li>a:hover{
+    color: #FFFFFF;
+}
+.utilitiy-nav{
+        position:absolute;
+        top: 0;
+        right: 20px;
+        z-index: 1999;
+        > ul{
+            list-style:none;
+            > li{
+                float:left;
+                > a{
+                    display: inline-block;
+                    padding: 8px 12px;
+                    color:#B5B5B5;
+                    font-size: 13px;
+                    &:hover{
+                        text-decoration: none;
+                        color: #FFFFFF;
+                    }
+                    @media (max-width: (@grid-float-breakpoint - 1)){
+                        span{
+                            .sr-only();
+                        }
+                    }
+                }
+            }
+        }
+}
+//头部结束
+
+//banner开始
+.mainBox{
+    height: 442px;
+    background: url(../img/banner_bg.jpg)no-repeat;
+//  margin: 0 auto;
+    position: relative;
+}
+//轮播图片开始
+.carbox{
+//  width: 590px;
+    height: 380px;
+    position: absolute;
+    top: 62px;
+    left: 148px;
+    background: orange;
+}
+.pic_weig1,.pic_weig2{
+//  width: 590px;
+    height: 380px;
+}
+.pic_weig1>img{
+    width: 100%;
+    height: 100%;
+}
+//轮播图片结束
+//文字开始
+div[class="pic_title"]{
+    position: absolute;
+    top: 148px;
+    right: 174px;
+    color: #FFFFFF;
+    > p{
+        width: 258px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        border-radius: 7px;
+        font-size: 25px;
+        border:1px solid #FFFFFF;
+    }
+}
+.pic_weig2{
+    background: url(../img/feature_phone.png)no-repeat;
+    position: relative;
+}
+.pic_weig2>img{
+    
+    height: 308px;
+}
+.feature_1{
+    width: 181px;
+    position: absolute;
+    top:67px;
+    left: 8px;
+}
+.feature_2{
+    width: 192px;
+    position: absolute;
+    top:56px;
+    left: 201px;
+}
+.feature_3{
+    width: 181px;
+    position: absolute;
+    top: 67px;
+    left: 404px;
+}
+@media (max-width: (@grid-float-breakpoint - 1)){
+        .carbox{
+            .sr-only();
+        }
+    }
+                    
+div[class="hot_title"]{
+    margin-top: 43px;
+    > h4{
+        float: left;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000;
+    }
+    > p{
+        float: right;
+        cursor: pointer;
+        color: #808081;
+    }
+}
+@media (max-width: (@grid-float-breakpoint - 1)){
+                        .pic_title{
+                            display: none;
+                        }
+                        
+                   
+                    }
+//文字结束
+//2.热门推荐开始
+.hot_divbox{
+   margin-bottom: 30px;
+}
+//装图片的盒子
+.hot_mask{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 26px;
+    background-color: rgba(0, 0, 0,0.5 );
+    color: #FFFFFF;
+}
+p.hot_desc_icon{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    text-align: right;
+}
+//2.热门推荐结束
+//3.k歌明星开始
+.star_box{
+    margin-bottom: 20px;
+    position: relative;
+//  background: olive;
+}
+.star_img>img{
+    border-radius: 50%;
+    text-align: center;
+}
+.star_img{
+//   background: red;
+     span{
+          padding-left: 20px;
+          padding-top: 20px;
+           font-size: 14px;
+           color: #08082c;
+     }
+}
+//3.k歌明星结束
+//banner结束
+//尾巴开始
+.footBox{
+    margin-top: 60px;
+}
+.footBox p{
+        color: #6a6a6a;
+        font-size: 12px;
+        text-align: center;
+}
+.footBox p:nth-child(1){
+    margin-bottom: 25px;
+}
+.footBox a{
+        color: #6a6a6a;
+        font-size: 12px;
+        text-decoration: none;
+        padding-left: 2px;
+}
+.footBox a:hover{
+     text-decoration: underline;
+}
+
+footer[role="contentinfo"]{
+    @media screen and (max-width:768px){
+            p{
+            display: none;
+        }
+    }
+    @media screen and (min-width:798px){
+            p{
+            display: block;
+        }
+}                
+}
+
+//尾部结束
+//返回顶部开始
+#backtop{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #D2C9CA;
+    position: fixed;
+    z-index: 100;
+    bottom: 50px;
+    right: 50px;
+    color: #d2c9ca;
+    border-radius: 40%;
+}
+//返回顶部结束
+
+
+
