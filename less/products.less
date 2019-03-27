@@ -1,0 +1,145 @@
+
+//右侧二维码开始
+.slide_code{
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    padding: 10px;
+    z-index: 1000;
+    .slide_code_bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.4;
+    }
+    img{
+        position: relative;
+        display: block;
+        width: 130px;
+        height: 130px;
+    }
+    p{
+        position: relative;
+        text-align: center;
+        padding-top: 5px;
+        font-size: 14px;
+    }
+}
+//右侧二维码结束
+//轮播开始
+.carousel_phone{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.carousel_phone1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 78.5%;
+    .fea1{
+        display: block;
+        position: absolute;
+        top: -62px;
+        left: 1%;
+        width: 16.5%;
+        margin-top: 11.5%;
+    }
+    .fea2{
+        display: block;
+        position: absolute;
+        top:42px;
+        left: 18.3%;
+        width: 18.4%;
+        margin-top: 7.5px;
+    }
+    .fea3{
+        display: block;
+        position: absolute;
+        top: -56px;
+        left: 37%;
+        width: 16.5%;
+        margin-top: 11.5%;
+    }
+    .fea_bg{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.pro_lunbo_tlt{
+    position: absolute;
+    top: 13px;
+    left: 68px;
+    color: #FFFFFF;
+}
+//轮播结束
+//下载客户端开始
+.pro_downloadBox{
+    position: absolute;
+    right: 13%;
+    top: 26%;
+    color: #FFFFFF;
+    h4{
+//      padding-bottom: 10px;
+    }
+    ul{
+        width: 304px;
+        height: 225px;
+        background: rgba(83,172,150,0.2);
+        text-align: center;
+       
+        li{
+            position: relative;
+            text-align: left;
+            list-style: none;
+            height: 75px;
+            line-height: 75px;
+            font-size: 15px;
+            padding-left: 0;
+            span{
+                padding-left: 20px;
+            }
+            em.pro_down_mask{
+                font-style: normal;
+                position: absolute;
+                left: -39px;
+                top: 0;
+                width: 304px;
+                height: 75px;
+                background-color: #fff;
+                opacity: 0.2;
+            }
+        }
+    }
+}
+.pro_dow_line1,.pro_dow_line2{
+    position: absolute;
+    width: 283px;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.5;
+}
+.pro_dow_line1{
+    top: 0;
+    left: -28px;
+}
+.pro_dow_line2{
+    top: 75px;
+    left: -28px;
+}
+@media screen and (max-width:1204px){
+ .pro_downloadBox{
+   display: none;
+      }
+}
+@media screen and (min-width:1204px){
+ .pro_downloadBox{
+    display: block;
+      }
+}
+//下载客户端结束

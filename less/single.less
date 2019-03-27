@@ -1,0 +1,207 @@
+
+//主人开始
+.sg_master{
+    float: left;
+    width: 38%;
+    overflow: hidden;
+    margin: 90px 0 0 8%;
+    padding-left: 140px;
+    clear: left;
+    color: #fff;
+//  background: green;
+    .pic_my{
+        position: relative;
+        float: left;
+        margin-left: -140px;
+        width: 116px;
+        height: 116px;
+        border: 2px solid #fff;
+        border-radius: 120px;
+        
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 999px;
+        }
+    }
+}
+.my_name{
+     padding-top: 10px;
+     span{
+    font-size: 24px;
+     }
+}
+.my_fengsi{
+    padding: 3px 0;
+    font-size: 14px;
+    padding-top: 10px;
+    a{
+        display: inline-block;
+        margin-right: 10px;
+        color: #fff;
+        text-decoration: none;
+    }
+    &:hover{
+        cursor: pointer;
+        color: red;
+    }
+}
+//主人结束
+//上传开始
+.shangchuang{
+    float: right;
+    margin: 135px 8% 0 0;
+    a{
+        display: inline-block;
+        padding: 0 15px;
+        height: 28px;
+        border: 1px solid #fff;
+        color: #fff;
+        border-radius: 2px;
+        font-size: 14px;
+        line-height: 28px;
+        margin-left: 6px;
+        text-decoration: none;
+    }
+     &:hover{
+        cursor: pointer;
+        background: darkred;
+    }
+}
+//上传结束
+//分享开始
+.fenxiang{
+   position: absolute;
+    z-index: 4;
+    top: 10px;
+    right: 10px;
+    a{
+        margin-left: 8px;
+        text-decoration: none;
+    }
+     &:hover{
+        cursor: pointer;
+    }
+}
+.erweima{
+    position: absolute;
+    z-index: 30;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    p{
+        font-size: 13px;
+        text-align: center;
+        width: 128px;
+    }
+}
+//分享结束
+//作品标题开始
+.my_tlt{
+    height: 40px;
+    margin-bottom: 30px;
+    border: 1px solid #dfe3e6;
+    border-top: 0;
+    >.my_tlt_row{
+        overflow: hidden;
+        zoom: 1;
+        text-align: center;
+        >.my_tlt_col{
+            display: inline-block;
+            padding: 0 7%;
+            >b{
+                display: block;
+                font-weight: 400;
+                width: 140px;
+                height: 38px;
+                line-height: 38px;
+//              padding-bottom: 2px;
+                text-align: center;
+                font-size: 14px;
+                color: #000;
+                text-decoration: none;
+            }
+        }
+    }  
+}
+
+.zuoping_on{
+    color: #f05549;
+    border-bottom: 2px solid #f05549;
+}
+
+//作品标题结束
+.products_conts{
+    position: relative;
+    height: 51px;
+    padding-top: 10px;
+    span{
+        position: absolute;
+        left: 0;
+        top: 35px;
+        display: block;
+        font-size: 14px;
+        color: #999;
+        em{ 
+            font-style: normal;
+            margin-right: 10px;
+        }
+    }
+    p{
+        padding-top: 3px;
+        b{    
+           font-weight: 400;
+            float: left;
+            max-width: 85%;
+            font-size: 16px;
+            color: #000;
+            margin-right: 5px;
+            line-height: 24px;
+          
+        }
+        span{
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: none;
+            padding: 17px 0 0 245px;
+        }
+    }
+}
+.sg_birds{
+    text-align: center;
+    padding: 100px 0 150px;
+    font-size: 16px;
+    color: grey;
+}
+@media screen and (max-width:768px){
+    .shangchuang,.fenxiang{
+        display: none;
+          }
+}
+@media screen and (min-width:798px){
+     .shangchuang,.fenxiang{
+        display: block;
+          }
+}
+//个人中心蒙版
+.sg_mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    transition: opacity 0.2s ease-in;
+    display: none;
+    i{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -25px 0 0 -25px;
+    }
+}
