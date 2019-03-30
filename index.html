@@ -12,10 +12,11 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/ksongs_main.css" />
+        <link rel="stylesheet" href="css/animate.min.css" />
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script type="text/javascript" src="js/vendor/jquery-1.11.1.min.js"></script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/index.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -55,19 +56,19 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav nav_size" id="navul">
 					<li class="active">
-					    <a href="#"  data-toggle="dropdown">首页</a>
+					    <a href="#">首页</a>
 					</li>
 					<li>
-					    <a href="#"  data-toggle="dropdown">产品介绍</a>
+					    <a href="html/products.html" >产品介绍</a>
 					</li>
 					<li>
-					    <a href="html/dasai.html"  data-toggle="dropdown">大赛</a>
+					    <a href="html/dasai.html">大赛</a>
 					</li>
 					<li>
-					    <a href="#"  data-toggle="dropdown">个人中心</a>
+					    <a href="html/single.html">个人中心</a>
 					</li>
 					<li>
-					    <a href="#"  data-toggle="dropdown">VIP中心</a>
+					    <a href="#">VIP中心</a>
 					</li>
 				</ul>
             </div>
@@ -82,7 +83,6 @@
   	<div class="container">
   		<!--轮播图片开始-->
   		<div class="carousel slide carbox" data-ride="carousel">
-		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox">
 		    <div class="item pic_weig1 active">
 		      <img src="img/feature_pc.png" >
@@ -102,7 +102,18 @@
   			<h2>音效升级  等你来唱</h2>
   			<p>立即下载</p>
   		</div>
-  		<!--文字结束-->
+  	    <!--文字结束-->
+  	    <!--响应手机图片开始-->
+		  	<div class="row phone_xy" style="padding-top: 100px;">
+		  		<div class="col-xs-6" style="position: relative;">
+		  			<img src="img/phone_1.png" width="100%" class="index_xy_p2 animated bounceInLeft">
+		  			<img src="img/phone_2.png" width="100%" class="index_xy_p1 animated bounceInRight">
+		  		</div>
+		  		<div class="lijidown animated bounceInUp">
+		  			<h3 style="margin-top:10px;">立即下载</h3>
+		  		</div>
+		  	</div>
+  <!--响应手机图片结束-->
   	</div>
   </div>
   <!--1.轮播图结束-->
@@ -111,17 +122,17 @@
   	<div class="row">
   		<div class="hot_title">
   			<h4> 热门作品推荐</h4>
-	  		<p> 
+	  		<p id="index_change"> 
 	  			<span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
 	  			换一批
 	  		</p>
   		</div>
   	</div>
   </div>
-  <div class="container">
+  <div class="container change_1">
   	<div class="row">
   		<div class="col-md-3 col-xs-6 hot_divbox"">
-  			<div class="box" style="position: relative;">
+  			<div class="hot_anima  animated flipInX" style="position: relative;">
   				<img src="img/hot1.jpg" width="100%"/ class="hotimg">
 				<div class="hot_mask">
 					<p>一路向北</p>
@@ -130,7 +141,7 @@
   			</div> 			
   		</div>
   		<div class="col-md-3 col-xs-6 hot_divbox">
-  			<div class="box" style="position: relative;">
+  			<div class="hot_anima  animated flipInX" style="position: relative;">
   				<img src="img/hot2.jpg" width="100%"/ class="hotimg">
 				<div class="hot_mask">
 					<p>一路向北</p>
@@ -139,7 +150,7 @@
   			</div> 			
   		</div>
   		<div class="col-md-3 col-xs-6 hot_divbox">
-  			<div class="box" style="position: relative;">
+  			<div class="hot_anima  animated flipInX" style="position: relative;">
   				<img src="img/hot3.jpg" width="100%"/ class="hotimg">
 				<div class="hot_mask">
 					<p>一路向北</p>
@@ -148,7 +159,7 @@
   			</div> 			
   		</div>
   		<div class="col-md-3 col-xs-6 hot_divbox">
-  			<div class="box" style="position: relative;">
+  			<div class="hot_anima  animated flipInX" style="position: relative;">
   				<img src="img/hot4.jpg" width="100%"/ class="hotimg">
 				<div class="hot_mask">
 					<p>一路向北</p>
@@ -157,7 +168,7 @@
   			</div> 			
   		</div>
   		<div class="col-md-3 col-xs-6 hot_divbox">
-  			<div class="box" style="position: relative;">
+  			<div class="hot_anima  animated flipInX" style="position: relative;">
   				<img src="img/hot5.jpg" width="100%"/ class="hotimg">
 				<div class="hot_mask">
 					<p>一路向北</p>
@@ -166,7 +177,7 @@
   			</div> 			
   		</div>
   		<div class="col-md-3 col-xs-6 hot_divbox">
-  			<div class="box" style="position: relative;">
+  			<div class="hot_anima  animated flipInX" style="position: relative;">
   				<img src="img/hot6.jpg" width="100%"/ class="hotimg">
 				<div class="hot_mask">
 					<p>一路向北</p>
@@ -175,7 +186,7 @@
   			</div> 			
   		</div>
   		<div class="col-md-3 col-xs-6 hot_divbox">
-  			<div class="box" style="position: relative;">
+  			<div class="hot_anima  animated flipInX" style="position: relative;">
   				<img src="img/hot7.jpg" width="100%"/ class="hotimg">
 				<div class="hot_mask">
 					<p>一路向北</p>
@@ -184,8 +195,80 @@
   			</div> 			
   		</div>
   		<div class="col-md-3 col-xs-6 hot_divbox">
-  			<div class="box" style="position: relative;">
+  			<div class="hot_anima  animated flipInX" style="position: relative;">
   				<img src="img/hot8.jpg" width="100%"/ class="hotimg">
+				<div class="hot_mask">
+					<p>一路向北</p>
+					<p class="hot_desc_icon"><span class="glyphicon glyphicon-headphones"></span>&nbsp;&nbsp;2305</p>
+				</div>
+  			</div> 			
+  		</div>
+  		<div class="col-md-3 col-xs-6 hot_divbox"">
+  			<div class="hot_anima  animated flipInX" style="position: relative;">
+  				<img src="img/huan1.jpg" width="100%"/ class="hotimg">
+				<div class="hot_mask">
+					<p>一路向北</p>
+					<p class="hot_desc_icon"><span class="glyphicon glyphicon-headphones"></span>&nbsp;&nbsp;2305</p>
+				</div>
+  			</div> 			
+  		</div>
+  		<div class="col-md-3 col-xs-6 hot_divbox">
+  			<div class="hot_anima  animated flipInX" style="position: relative;">
+  				<img src="img/huan2.jpg" width="100%"/ class="hotimg">
+				<div class="hot_mask">
+					<p>一路向北</p>
+					<p class="hot_desc_icon"><span class="glyphicon glyphicon-headphones"></span>&nbsp;&nbsp;2305</p>
+				</div>
+  			</div> 			
+  		</div>
+  		<div class="col-md-3 col-xs-6 hot_divbox">
+  			<div class="hot_anima  animated flipInX" style="position: relative;">
+  				<img src="img/huan3.jpg" width="100%"/ class="hotimg">
+				<div class="hot_mask">
+					<p>一路向北</p>
+					<p class="hot_desc_icon"><span class="glyphicon glyphicon-headphones"></span>&nbsp;&nbsp;2305</p>
+				</div>
+  			</div> 			
+  		</div>
+  		<div class="col-md-3 col-xs-6 hot_divbox">
+  			<div class="hot_anima  animated flipInX" style="position: relative;">
+  				<img src="img/huan4.jpg" width="100%"/ class="hotimg">
+				<div class="hot_mask">
+					<p>一路向北</p>
+					<p class="hot_desc_icon"><span class="glyphicon glyphicon-headphones"></span>&nbsp;&nbsp;2305</p>
+				</div>
+  			</div> 			
+  		</div>
+  		<div class="col-md-3 col-xs-6 hot_divbox">
+  			<div class="hot_anima  animated flipInX" style="position: relative;">
+  				<img src="img/huan5.jpg" width="100%"/ class="hotimg">
+				<div class="hot_mask">
+					<p>一路向北</p>
+					<p class="hot_desc_icon"><span class="glyphicon glyphicon-headphones"></span>&nbsp;&nbsp;2305</p>
+				</div>
+  			</div> 			
+  		</div>
+  		<div class="col-md-3 col-xs-6 hot_divbox">
+  			<div class="hot_anima  animated flipInX" style="position: relative;">
+  				<img src="img/huan6.jpg" width="100%"/ class="hotimg">
+				<div class="hot_mask">
+					<p>一路向北</p>
+					<p class="hot_desc_icon"><span class="glyphicon glyphicon-headphones"></span>&nbsp;&nbsp;2305</p>
+				</div>
+  			</div> 			
+  		</div>
+  		<div class="col-md-3 col-xs-6 hot_divbox">
+  			<div class="hot_anima  animated flipInX" style="position: relative;">
+  				<img src="img/huan7.jpg" width="100%"/ class="hotimg">
+				<div class="hot_mask">
+					<p>一路向北</p>
+					<p class="hot_desc_icon"><span class="glyphicon glyphicon-headphones"></span>&nbsp;&nbsp;2305</p>
+				</div>
+  			</div> 			
+  		</div>
+  		<div class="col-md-3 col-xs-6 hot_divbox">
+  			<div class="hot_anima  animated flipInX" style="position: relative;">
+  				<img src="img/huan8.jpg" width="100%"/ class="hotimg">
 				<div class="hot_mask">
 					<p>一路向北</p>
 					<p class="hot_desc_icon"><span class="glyphicon glyphicon-headphones"></span>&nbsp;&nbsp;2305</p>
@@ -203,16 +286,55 @@
   		</div>
   	</div>
   </div>
-  <div class="container">
+  <div class="container visible-lg  visible-md">
   	<div class="row">
-  		<div class="col-md-1 col-xs-4 star_box">
+  		<div class="col-md-1 col-xs-4 star_box1">
   			<div class="star_img" style="position: relative;">
-  				<img src="img/superstar1.jpg" style="width: 100%;">
+  				<img src="img/superstar2.jpg" style="width: 100%;">
   				<span>N.W</span>
   			</div>
   		</div>
-  		
-  		
+  		<div class="col-md-1 col-xs-4 star_box1">
+  			<div class="star_img" style="position: relative;">
+  				<img src="img/superstar3.jpg" style="width: 100%;">
+  				<span>N.W</span>
+  			</div>
+  		</div>
+  		<div class="col-md-1 col-xs-4 star_box1">
+  			<div class="star_img" style="position: relative;">
+  				<img src="img/superstar4.jpg" style="width: 100%;">
+  				<span>N.W</span>
+  			</div>
+  		</div>
+  		<div class="col-md-1 col-xs-4 star_box1">
+  			<div class="star_img" style="position: relative;">
+  				<img src="img/superstar5.jpg" style="width: 100%;">
+  				<span>N.W</span>
+  			</div>
+  		</div>
+  		<div class="col-md-1 col-xs-4 star_box1">
+  			<div class="star_img" style="position: relative;">
+  				<img src="img/superstar6.jpg" style="width: 100%;">
+  				<span>N.W</span>
+  			</div>
+  		</div>
+  		<div class="col-md-1 col-xs-4 star_box1">
+  			<div class="star_img" style="position: relative;">
+  				<img src="img/superstar7.jpg" style="width: 100%;">
+  				<span>N.W</span>
+  			</div>
+  		</div>
+  		<div class="col-md-1 col-xs-4 star_box1">
+  			<div class="star_img" style="position: relative;">
+  				<img src="img/superstar8.jpg" style="width: 100%;">
+  				<span>N.W</span>
+  			</div>
+  		</div>	
+  	</div>
+  </div>
+  <!--切换-->
+  <div class="container visible-xs visible-sm">
+  	<div class="row">
   		<div class="col-md-1 col-xs-4 star_box">
   			<div class="star_img" style="position: relative;">
   				<img src="img/superstar2.jpg" style="width: 100%;">
@@ -254,7 +376,7 @@
   				<img src="img/superstar8.jpg" style="width: 100%;">
   				<span>N.W</span>
   			</div>
-  		</div>
+  		</div>	
   	</div>
   </div>
   <!--3.k歌明星结束-->
@@ -296,10 +418,7 @@
 		 	<a>粤网文[2014]0633-233号</a>
 		 	<a>12318全国文化市场举报网站</a>
 		 </p>
-	</div>
- 
-  
+	</div> 
 </footer>
-
-    </body>
+</body>
 </html>

@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="../css/ksongs_main.css" />
         <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="../js/plugins.js"></script>
-        <script src="../js/main.js"></script>
+        <script src="../js/ds.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -53,20 +53,20 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav nav_size" id="navul">
+					<li>
+					    <a href="../index.html">首页</a>
+					</li>
+					<li>
+					    <a href="../html/products.html">产品介绍</a>
+					</li>
 					<li class="active">
-					    <a href="#"  data-toggle="dropdown">首页</a>
+					    <a href="../html/dasai.html">大赛</a>
 					</li>
 					<li>
-					    <a href="#"  data-toggle="dropdown">产品介绍</a>
+					    <a href="../html/single.html">个人中心</a>
 					</li>
 					<li>
-					    <a href="html/dasai.html"  data-toggle="dropdown">大赛</a>
-					</li>
-					<li>
-					    <a href="#"  data-toggle="dropdown">个人中心</a>
-					</li>
-					<li>
-					    <a href="#"  data-toggle="dropdown">VIP中心</a>
+					    <a href="#">VIP中心</a>
 					</li>
 				</ul>
             </div>
@@ -198,6 +198,33 @@
 	<a>查看更多</a>
 </div>
 </main>
+<!--模态框开始-->
+<div class="container">
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  参赛
+</button>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal_wid" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="padding-left: 77px;">安全登录，防止被盗</h4>
+      </div>
+      <div class="modal-body motai_content">
+       <img src="../img/motai.png" />
+       <p>使用全民K歌手机版扫描二维码</p>
+       <span><img src="../img/motai_phone.jpg"></span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary">继续</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--模态框结束-->
 <!--返回顶部开始-->
   <div id="backtop" class="back_header">
   		<img src="../img/backtop.jpg" />
@@ -236,8 +263,6 @@
 		 	<a>12318全国文化市场举报网站</a>
 		 </p>
 	</div>
- 
-  
 </footer>
     </body>
 </html>

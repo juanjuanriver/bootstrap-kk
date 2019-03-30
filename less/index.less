@@ -70,12 +70,10 @@ header[role="banner"]{
 }
 //轮播图片开始
 .carbox{
-//  width: 590px;
     height: 380px;
     position: absolute;
     top: 62px;
     left: 148px;
-    background: orange;
 }
 .pic_weig1,.pic_weig2{
 //  width: 590px;
@@ -148,19 +146,60 @@ div[class="hot_title"]{
         color: #808081;
     }
 }
-@media (max-width: (@grid-float-breakpoint - 1)){
-                        .pic_title{
-                            display: none;
-                        }
-                        
-                   
-                    }
 //文字结束
+//响应手机图片开始
+.index_xy_p1{
+  margin-left: 50%;
+}
+.index_xy_p2{
+    margin-left: 50%;
+    position: absolute;
+    top: 0%;
+    left: 2%;
+}
+@media  screen and(max-width:998px){
+   .phone_xy{
+        display: block;
+   }
+   .pic_title{
+       display: none;
+   }
+   .carbox{
+        display: none;
+   }  
+}
+@media  screen and(min-width:998px){
+   .phone_xy{
+        display: none;
+   }
+   .pic_title{
+       display: block;
+   }
+    .carbox{
+        display: block;
+   } 
+}
+.lijidown{
+    width: 33%;
+    height: 45px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-radius: 45px;
+    font-size: 24px;
+    color: #fff;
+    margin-top: 50%;
+    cursor: pointer;
+}
+//响应手机图片结束
 //2.热门推荐开始
 .hot_divbox{
    margin-bottom: 30px;
 }
 //装图片的盒子
+.hot_anima:hover{
+    animation-iteration-count:infinite;
+}
 .hot_mask{
     position: absolute;
     bottom: 0;
@@ -175,24 +214,34 @@ p.hot_desc_icon{
     right: 20px;
     text-align: right;
 }
+//换一批
+.change_1>div>div{
+    display: none;
+}
 //2.热门推荐结束
 //3.k歌明星开始
 .star_box{
     margin-bottom: 20px;
     position: relative;
-//  background: olive;
+}
+.star_box1{
+    margin-bottom: 20px;
+    position: relative;
+    width: 14%;
 }
 .star_img>img{
     border-radius: 50%;
     text-align: center;
+    &:hover{
+         animation: wobble  1s alternate linear 3;
+    }
 }
 .star_img{
-//   background: red;
      span{
           padding-left: 20px;
           padding-top: 20px;
-           font-size: 14px;
-           color: #08082c;
+          font-size: 14px;
+          color: #08082c;
      }
 }
 //3.k歌明星结束

@@ -6,6 +6,7 @@
     bottom: 30px;
     padding: 10px;
     z-index: 1000;
+   
     .slide_code_bg{
         position: absolute;
         left: 0;
@@ -20,6 +21,9 @@
         display: block;
         width: 130px;
         height: 130px;
+        &:hover{
+             animation-iteration-count:infinite;
+        }
     }
     p{
         position: relative;
@@ -143,3 +147,36 @@
       }
 }
 //下载客户端结束
+//产品详情开始
+//图片左边
+.pro_info_tlt1{
+    text-align: right;
+    padding: 20% 10%;
+    h1{
+        font-size: 60px;
+    }
+    p{
+        font-size: 26px;
+    }
+}
+.pro_info1_img1:hover{
+    animation: rubberBand  1s alternate linear 3;
+}
+@media only screen and(max-width:780px){
+    .pro_info_tlt1{
+        top: 0%;
+        right: 12%;
+    }
+}
+//图片右边
+.pro_info_tlt2{
+    padding: 20% 10%;
+    text-align: left;
+    h1{
+        font-size: 60px;
+    }
+    p{
+        font-size: 26px;
+    }
+}
+//产品详情结束

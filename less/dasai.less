@@ -1,14 +1,27 @@
 .ds_box{
     width: 100%;
     position: relative;
-//  background: red;
     p{
         color: #000000;
         padding-top: 20px;
-        font-size: 16px;
-//      background: goldenrod;
+        font-size: 16px; 
+    }
+    &:hover{
+        
+         animation:revolveScale 0.5s forwards;
     }
 }
+
+@keyframes revolveScale {
+    60% {
+        transform: translate(20px, 20px) rotate(30deg) scale(0.3);
+    }
+    100% {
+        transform: translate(0) rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+
 @media screen and (max-width:768px){
  .ds_pb{
     margin-bottom: 20px;
@@ -43,3 +56,30 @@
         cursor: pointer;
                 }
 }
+//模态框参赛开始
+.motai_content{
+    text-align: center;
+    p{
+        margin: 0 auto;
+        width: 220px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        color: grey;
+        border-radius: 40px;
+        text-align: center;
+        background-color: #f6f6f6;
+       margin-top: 20px;
+    }
+    span>img{
+        position: absolute;
+        top: -37px;
+        right:-192px;
+        display: none;
+        width: 187px;
+        height: 380px;
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+}
+//模态框参赛结束

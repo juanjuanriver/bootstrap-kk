@@ -3,11 +3,14 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>特性介绍 - 全民K歌</title>
-	<script src="../js/vendor/jquery-1.11.1.min.js"></script>
-	<script src="../js/plugins.js"></script>
-	<script src="../js/main.js"></script>
-	<script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+	
 	<link rel="stylesheet" href="../css/ksongs_main.css" />
+	<link rel="stylesheet" href="../css/animate.min.css" />
+	<script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+	<script src="../js/vendor/jquery-1.11.1.min.js"></script>
+	<script src="../js/wow.min.js"></script>
+	<script src="../js/plugins.js"></script>
+	<script src="../js/pro.js"></script>
 </head>
 <body>
 <header role="banner">
@@ -41,20 +44,20 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav nav_size" id="navul">
+					<li>
+					    <a href="../index.html">首页</a>
+					</li>
 					<li class="active">
-					    <a href="#"  data-toggle="dropdown">首页</a>
+					    <a href="#">产品介绍</a>
 					</li>
 					<li>
-					    <a href="#"  data-toggle="dropdown">产品介绍</a>
+					    <a href="../html/dasai.html">大赛</a>
 					</li>
 					<li>
-					    <a href="html/dasai.html"  data-toggle="dropdown">大赛</a>
+					    <a href="../html/single.html">个人中心</a>
 					</li>
 					<li>
-					    <a href="#"  data-toggle="dropdown">个人中心</a>
-					</li>
-					<li>
-					    <a href="#"  data-toggle="dropdown">VIP中心</a>
+					    <a href="#">VIP中心</a>
 					</li>
 				</ul>
             </div>
@@ -64,7 +67,7 @@
 <!--二维码开始-->
 <div class="slide_code">
 	<div class="slide_code_bg"></div>
-	<img src="../img/down_qrcode.png" />
+	<img src="../img/down_qrcode.png" class="animated rubberBand">
 	<p class="slide_code_info">扫二维码下载</p>
 </div>
 <!--二维码结束-->
@@ -121,27 +124,82 @@
 </div>
 <!--轮播部分结束-->
 <!--轮播部分结束-->
+
 <div style="background: url(../img/info1.jpg)no-repeat;height: 400px;">
-	<h2 style="line-height: 400px;text-align: center;">产品详情</h2>
+	<h2 style="line-height: 400px;text-align: center;">
+		<a href="../html/vip.html">产品详情</a>
+	</h2>
 </div>
+
 <!--产品详细介绍开始-->
-<div class="pro_info1"  style="background: url(../img/info1.jpg)no-repeat;height: 920px;">
+<div  style="background: url(../img/info1.jpg)no-repeat;">
 	<div class="container">
-		<div class="row" style="background: olivedrab;position: relative;">
-			<div class="col-md-6 col-xs-12">
-				
+		<div class="row" style="padding-top: 30px;">
+			<div class="col-md-4 col-xs-12">
+				<img src="../img/pro1.jpg" style="width: 100%;" class="wow rollIn">
 			</div>
-			<div class="col-md-6 col-xs-12 pro_info_tlt">
-				<h1>丰富榜单</h1>
-				<p>点歌台改造，锁定你想要的歌</p>
+			<div class="col-md-8 col-xs-12 pro_info_tlt1">
+				<h1 class="wow lightSpeedIn">丰富榜单</h1>
+				<p class="wow   lightSpeedIn">点歌台改造，锁定你想要的歌</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div  style="background: url(../img/info2.jpg)no-repeat;">
+	<div class="container">
+		<div class="row" style="padding-top: 30px;">
+
+			<div class="col-md-8 col-xs-12 pro_info_tlt2">
+				<h1 class="wow zoomInLeft">精彩抢先</h1>
+				<p class="wow  zoomInLeft">动态页曝光，实时参与歌房和直播</p>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<img src="../img/pro2.jpg" style="width: 100%;" class="pro_info1_img2 wow zoomInRight">
+			</div>
+		</div>
+	</div>
+</div>
+<div  style="background: url(../img/info3.jpg)no-repeat;">
+	<div class="container">
+		<div class="row" style="padding-top: 30px;">
+			<div class="col-md-4 col-xs-12">
+				<img src="../img/pro3.jpg" style="width: 100%;" class="wow slideInRight">
+			</div>
+			<div class="col-md-8 col-xs-12 pro_info_tlt1">
+				<h1 class="wow slideInLeft">歌房作品发布</h1>
+				<p class="wow  slideInLeft">发布在歌房中演唱的优秀作品</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div  style="background: url(../img/info4.jpg)no-repeat;">
+	<div class="container">
+		<div class="row" style="padding-top: 30px;">
+
+			<div class="col-md-8 col-xs-12 pro_info_tlt2">
+				<h1 class="wow rotateInUpLeft">下载作品</h1>
+				<p class="wow  rotateInUpLeft">随时随地想听就听！</p>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<img src="../img/pro4.jpg" style="width: 100%;" class="pro_info1_img2 wow rotateInDownRight">
+			</div>
+		</div>
+	</div>
+</div>
+<div  style="background: url(../img/info5.jpg)no-repeat;">
+	<div class="container">
+		<div class="row" style="padding-top: 30px;">
+			<div class="col-md-4 col-xs-12">
+				<img src="../img/pro5.jpg" style="width: 100%;" class="wow fadeInLeft">
+			</div>
+			<div class="col-md-8 col-xs-12 pro_info_tlt1">
+				<h1 class="wow fadeInRight">任务中心</h1>
+				<p class="wow  fadeInRight">更多鲜花福利等你来！</p>
 			</div>
 		</div>
 	</div>
 </div>
 <!--产品详细介绍结束-->
-
-
-
 </main>
 <footer role="contentinfo">
 	<div class="container footBox">
@@ -176,8 +234,7 @@
 		 	<a>12318全国文化市场举报网站</a>
 		 </p>
 	</div>
- 
-  
 </footer>
+
 </body>
 </html>
